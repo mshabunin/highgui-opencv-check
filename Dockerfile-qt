@@ -1,0 +1,7 @@
+FROM ubuntu:22.04
+
+RUN apt-get update && apt-get install -y \
+    cmake ninja-build g++ ccache
+
+RUN apt-get update && apt-get install -y \
+    qtbase5-dev qtbase5-dev-tools

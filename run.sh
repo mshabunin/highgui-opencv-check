@@ -2,7 +2,7 @@
 
 set -ex
 
-PLATFORMS=(qt gtk2 gtk3 win32)
+PLATFORMS=(win32 qt gtk2 gtk3)
 # PLATFORMS=(win32)
 
 for p in ${PLATFORMS[@]} ; do

@@ -9,7 +9,7 @@ opt=
 [ "${p}" == "qt" ] && opt=-DWITH_QT=ON
 [ "${p}" == "gtk2" ] && opt=-DWITH_GTK=ON
 [ "${p}" == "gtk3" ] && opt=-DWITH_GTK=ON
-[ "${p}" == "win32" ] && opt=-DCMAKE_TOOLCHAIN_FILE=/scripts/mingw-w64-x86_64.cmake
+[ "${p}" == "win32" ] && opt="-DCMAKE_TOOLCHAIN_FILE=/scripts/mingw-w64-x86_64.cmake -DWITH_OPENEXR=OFF -DWITH_PROTOBUF=OFF"
 
 mkdir -p ${d}
 pushd ${d} && rm -rf *
